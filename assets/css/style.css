@@ -1,12 +1,18 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+/* asterisk wildcard commandto override default browser styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* General styles */
 body {
     background-color: #fff;
     font-family: 'Lato', sans-serif;
-    color: rgb(202 45 37);
     text-align: center;
 }
 
@@ -22,13 +28,11 @@ body {
 
 .quiz-area {
     background-color: rgb(202 45 37);
-    box-sizing: border-box;
-    width: 90%;
-    height: 70vh;
-    max-height: 500px;
-    max-width: 800px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    max-width: 700px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .answer {
@@ -44,7 +48,8 @@ body {
     border-radius: 4px;
 }
 
-.answer-area {
-    margin-top: 200px;
-    ;
+.answer-area {}
+
+#answer-buttons {
+    margin-top: 100px;
 }
