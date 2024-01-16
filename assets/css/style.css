@@ -12,8 +12,39 @@ body {
 
 
 .logo {
-    width: 15px;
-    padding-right: 10px;
+    width: 20px;
+    padding-right: 5px;
 }
 
-.heading {}
+.heading {
+    font-size: 2.5rem;
+}
+
+.quiz-area {
+    background-color: rgb(202 45 37);
+    box-sizing: border-box;
+    width: 90%;
+    height: 70vh;
+    max-height: 500px;
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.answer {
+    background-color: #fff;
+    color: black;
+    font-size: 130%;
+    font-weight: 600;
+    width: 45%;
+    height: 23%;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.answer-area {
+    margin-top: 200px;
+    ;
+}
