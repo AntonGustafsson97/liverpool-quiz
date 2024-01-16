@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 /* General styles */
@@ -24,15 +25,20 @@ body {
 
 .heading {
     font-size: 2.5rem;
+    color: rgb(202 45 37);
 }
 
 .quiz-area {
     background-color: rgb(202 45 37);
-    width: 100%;
+    width: 90%;
+    min-height: 500px;
     max-width: 700px;
     margin: 50px auto 0;
     border-radius: 10px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .answer {
@@ -40,16 +46,50 @@ body {
     color: black;
     font-size: 130%;
     font-weight: 600;
-    width: 45%;
-    height: 23%;
     border: 1px solid black;
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     border-radius: 4px;
 }
 
-.answer-area {}
+.answer-area,
+.question-area {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    width: 100%;
+
+}
+
+.answer-area {
+    flex-direction: column;
+}
+
+.question-area {
+    justify-content: center;
+}
 
 #answer-buttons {
-    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 12px;
+    width: 100%;
+}
+
+#play-again {
+    display: none;
+}
+
+#answer-buttons>button {
+    width: 100%;
+}
+
+.score-area {
+    margin-top: 8px;
+}
+
+@media (min-width: 1200px) {
+    #answer-buttons {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
