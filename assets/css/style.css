@@ -1,0 +1,19 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+/* General styles */
+body {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    color: rgb(202 45 37);
+    text-align: center;
+}
+
+
+.logo {
+    width: 15px;
+    padding-right: 10px;
+}
+
+.heading {}
