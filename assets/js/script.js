@@ -138,3 +138,10 @@ let questions = [
 
 ];
 
+function displayQuestion(currentQuestion) {
+    document.getElementById('question').innerText = currentQuestion.question;
+    document.getElementById('answer1').innerText = currentQuestion.answer[0].text;
+    document.getElementById('answer2').innerText = currentQuestion.answer[1].text;
+    document.getElementById('answer3').innerText = currentQuestion.answer[2].text;
+    document.getElementById('answer4').innerText = currentQuestion.answer[3].text;
+}
