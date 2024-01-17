@@ -98,6 +98,14 @@ body {
     margin-top: 8px;
 }
 
+.red {
+    background-color: red !important;
+}
+
+.green {
+    background-color: green !important;
+}
+
 @media (min-width: 1200px) {
     #answer-buttons {
         grid-template-columns: repeat(2, minmax(0, 1fr));
