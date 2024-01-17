@@ -146,6 +146,8 @@ let currentScore = 0;
 let blocked = false;
 const maxQuestion = 5;
 
+
+
 /* Display question function */
 function displayQuestion(currentQuestion) {
     document.getElementById('question').innerText = currentQuestion.question;
@@ -203,7 +205,8 @@ function showNextQuestion() {
         questionIndex = questionIndex + 1;
         displayQuestion(currentQuestion);
     } else {
-        alert('Game over');
+        const dialog = document.getElementById("dialog");
+        dialog.showModal()
     }
 }
 
