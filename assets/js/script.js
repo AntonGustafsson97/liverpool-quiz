@@ -165,3 +165,27 @@ function shuffleQuestions() {
     }
     return questions;
 }
+
+function checkAnswer(event) {
+    if (blocked === false) {
+        blocked = true;
+        const buttonClicked = event.target;
+        currentQuestion.answer.forEach((answer) => {
+            if (answer.text === buttonClicked.innerText) {
+                if (answer.correct) {
+                    buttonClicked.classList.add('green');
+                    currentScore = currentScore + 1;
+                    document.getElementById('score').innerText = 'Your score is' + currentScore;
+                } else {
+                    buttonClicked.classList.add('red');
+                }
+
+            }
+        });
+        setTimeout(() => {
+            resetAnswers();
+            showNextQuestion();
+            blocked = false;
+        }, 3000);
+    }
+}
