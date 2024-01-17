@@ -196,3 +196,13 @@ function resetAnswers() {
         button.classList.remove('red');
     });
 }
+
+function showNextQuestion() {
+    if (questionIndex < maxQuestion) {
+        currentQuestion = shuffledQuestions[questionIndex];
+        questionIndex = questionIndex + 1;
+        displayQuestion(currentQuestion);
+    } else {
+        alert('Game over');
+    }
+}
