@@ -175,7 +175,7 @@ function checkAnswer(event) {
                 if (answer.correct) {
                     buttonClicked.classList.add('green');
                     currentScore = currentScore + 1;
-                    document.getElementById('score').innerText = 'Your score is' + currentScore;
+                    document.getElementById('score-area').innerText = 'Your score is' + currentScore;
                 } else {
                     buttonClicked.classList.add('red');
                 }
@@ -206,3 +206,13 @@ function showNextQuestion() {
         alert('Game over');
     }
 }
+
+shuffledQuestions = shuffleQuestions();
+showNextQuestion();
+
+document.querySelectorAll('.answer').forEach((button) => {
+    button.addEventListener('click', (event) => {
+        checkAnswer(event);
+
+    })
+})

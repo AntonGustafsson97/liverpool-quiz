@@ -17,6 +17,14 @@ body {
     text-align: center;
 }
 
+.instructions {
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 8px;
+    padding-bottom: 12px;
+}
 
 .logo {
     width: 20px;
@@ -26,6 +34,7 @@ body {
 .heading {
     font-size: 2.5rem;
     color: rgb(202 45 37);
+    padding-top: 8px;
 }
 
 .quiz-area {
@@ -94,8 +103,9 @@ body {
     width: 100%;
 }
 
-.score-area {
+#score-area {
     margin-top: 8px;
+    font-size: 140%;
 }
 
 .red {
