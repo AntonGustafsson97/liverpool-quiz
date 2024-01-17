@@ -138,6 +138,13 @@ let questions = [
 
 ];
 
+let currentQuestion = null;
+let questionIndex = 0;
+let shuffledQuestions = [];
+let currentScore = 0;
+let blocked = false;
+const maxQuestion = 5;
+
 function displayQuestion(currentQuestion) {
     document.getElementById('question').innerText = currentQuestion.question;
     document.getElementById('answer1').innerText = currentQuestion.answer[0].text;
