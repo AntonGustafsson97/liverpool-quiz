@@ -144,8 +144,7 @@ let questionIndex = 0;
 let shuffledQuestions = [];
 let currentScore = 0;
 let blocked = false;
-const maxQuestion = 5;
-
+const maxQuestion = 10;
 
 
 /* Display question function */
@@ -199,19 +198,41 @@ function resetAnswers() {
     });
 }
 
+function resetGame() {
+    currentQuestion = null;
+    questionIndex = 0;
+    shuffledQuestions = [];
+    currentScore = 0;
+    blocked = false;
+
+    document.getElementById('score-area').innerText = 'Your score is' + currentScore;
+    document.getElementById("play-again").style.display = "none";
+    startGame();
+}
+
 function showNextQuestion() {
     if (questionIndex < maxQuestion) {
         currentQuestion = shuffledQuestions[questionIndex];
         questionIndex = questionIndex + 1;
         displayQuestion(currentQuestion);
     } else {
-        const dialog = document.getElementById("dialog");
-        dialog.showModal()
+
+        document.getElementById("play-again").style.display = "block";
+
+        playAgainButton.addEventListener("click", resetGame)
+        document.getElementById("dialog").showModal()
     }
 }
 
-shuffledQuestions = shuffleQuestions();
-showNextQuestion();
+function startGame() {
+    shuffledQuestions = shuffleQuestions();
+    showNextQuestion();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    startGame();
+})
+
 
 document.querySelectorAll('.answer').forEach((button) => {
     button.addEventListener('click', (event) => {
