@@ -189,3 +189,10 @@ function checkAnswer(event) {
         }, 3000);
     }
 }
+
+function resetAnswers() {
+    document.querySelectorAll('.answer').forEach((button) => {
+        button.classList.remove('green');
+        button.classList.remove('red');
+    });
+}
