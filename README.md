@@ -1,39 +1,54 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Liverpool Quiz
 
-Welcome,
+The Liverpool Quiz is a fun little quiz to test your knowledge about the clubs history up until today.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+5 of the 15 questions will randomly get choosen to the round and your job is to pick the correct answer out of the four possible.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+You can do the quiz as many times as you want and hopefully learn some new things about Liverpool FC.
 
-## Codeanywhere Reminders
+The live link can be found here - [Liverpool FC Quiz](https://antongustafsson97.github.io/liverpool-quiz/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+![Liverpool FC Quiz am i responsive image](docs/readme_images/am_i_responsive.png)
 
-`python3 -m http.server`
+## Site Owner Goals
+- To Provide users with a quiz that is full of knowledge and that is simple to navigate.
+- To provide the user with a site that looks clean and simple and is fully responsive.
+- To make the user wanna come back and improve the score.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## First Time User
+- As a first time user i want to understand what im look at and what the game is about.
+- As a first time user i want to be able to start the quiz and challange myself to a game of fun questions.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Returning User
+- As a returning user i want different questions.
 
-`http_server`
+## Frequent User
+- As a frequent user i want to be able to beat my score from last time.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Design
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Imagery and colors
+- The imagages and colors used on this site are used to represent Liverpool FC in the best way.
+- The red color was choosen because the club is associated with it and among the fans, Liverpool are often called "The Reds".
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Fonts
+- The font that is used throughout the site is Lato followed by Sans-seriff as a backup in case the main-font is not being imported correctly.
 
-To log into the Heroku toolbelt CLI:
+### Layout
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- The site is a single page with focus on the quiz. No distractions. The quiz is live once you enter the site so you can start playing instantly.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Wireframes
 
----
+Wireframes were created using Balsamiq.
 
-Happy coding!
+<details>
+
+<summary>Desktop Wireframe</summary>
+
+![Desktop Wireframe 1](docs/wireframes/wireframe_desktop.png)
+![Desktop Wireframe 2](docs/wireframes/wireframe_desktop%202.png)
+
+
+
+
