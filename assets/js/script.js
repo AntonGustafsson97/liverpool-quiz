@@ -144,7 +144,7 @@ let questionIndex = 0;
 let shuffledQuestions = [];
 let currentScore = 0;
 let blocked = false;
-const maxQuestion = 10;
+const maxQuestion = 5;
 
 
 /* Display question function */
