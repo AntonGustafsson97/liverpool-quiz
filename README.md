@@ -110,14 +110,14 @@ Wireframes were created using Balsamiq.
 -HTML5
 
 ### Frameworks - Libraries - Programs used
--[W3C](https://www.w3.org/) - Used to validate HTML and CSS.
--[Balsamiq](https://balsamiq.com/) - Used to create Wireframes.
--[Am I Responsive](https://amiresponsive.co.uk/) - Used to test if the site is responsive.
--[TinyPNG](https://tinypng.com/) - Used to make images smaller in file size without changing the quality.
--[GitHub](https://github.com/) - User for hosting and version controll.
--[Font Awesome](https://fontawesome.com/) - Used for selecting fav icon.
--[Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for debugging, testing code, and overall development.
--[Cleanpng](https://www.cleanpng.com/) - Used to remove background from images.
+- [W3C](https://www.w3.org/) - Used to validate HTML and CSS.
+- [Balsamiq](https://balsamiq.com/) - Used to create Wireframes.
+- [Am I Responsive](https://amiresponsive.co.uk/) - Used to test if the site is responsive.
+- [TinyPNG](https://tinypng.com/) - Used to make images smaller in file size without changing the quality.
+- [GitHub](https://github.com/) - User for hosting and version controll.
+- [Font Awesome](https://fontawesome.com/) - Used for selecting fav icon.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for debugging, testing code, and overall development.
+- [Cleanpng](https://www.cleanpng.com/) - Used to remove background from images.
 
 ## Deployment
 
