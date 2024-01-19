@@ -63,6 +63,10 @@ Wireframes were created using Balsamiq.
 
 ### Homepage
 - The site is just one page so the homepage is displaying the quiz instantly for the user to start playing.
+- When 5 questions have been answered, the user is told how they performed.
+
+![Landing Page](docs/readme_images/main_quiz.png)
+![When quiz is completed](docs/readme_images/main_quiz_done_good.png)
 
 ### Features to improve the site
 - Create a leaderboard so that users can battle among each other who has the greater knowledge.
