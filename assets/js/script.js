@@ -1,4 +1,4 @@
-/* 10 of these 15 questions will be randomly choosen */
+/* 5 of these 15 questions will be randomly choosen */
 let questions = [
     {
         question: 'Who is the current manager of the team?',
@@ -167,6 +167,7 @@ function shuffleQuestions() {
     return questions;
 }
 
+/* Checks if answer is correct */
 function checkAnswer(event) {
     if (blocked === false) {
         blocked = true;
@@ -176,7 +177,7 @@ function checkAnswer(event) {
                 if (answer.correct) {
                     buttonClicked.classList.add('green');
                     currentScore = currentScore + 1;
-                    document.getElementById('score-area').innerText = 'Your score is' + currentScore;
+                    document.getElementById('score-area').innerText = 'Your score is ' + currentScore;
                 } else {
                     buttonClicked.classList.add('red');
                 }
@@ -191,6 +192,7 @@ function checkAnswer(event) {
     }
 }
 
+/* Removes green and red color from answer button when new question is displayed */
 function resetAnswers() {
     document.querySelectorAll('.answer').forEach((button) => {
         button.classList.remove('green');
@@ -198,6 +200,7 @@ function resetAnswers() {
     });
 }
 
+/* Reset game function */
 function resetGame() {
     currentQuestion = null;
     questionIndex = 0;
@@ -210,17 +213,23 @@ function resetGame() {
     startGame();
 }
 
+/* Displays a modal after 5 questions telling you how you did */
 function showNextQuestion() {
     if (questionIndex < maxQuestion) {
         currentQuestion = shuffledQuestions[questionIndex];
         questionIndex = questionIndex + 1;
         displayQuestion(currentQuestion);
     } else {
-
-        document.getElementById("play-again").style.display = "block";
-
-        playAgainButton.addEventListener("click", resetGame)
-        document.getElementById("dialog").showModal()
+        const playAgainButton = document.getElementById("play-again");
+        playAgainButton.style.display = "block";
+        playAgainButton.addEventListener("click", resetGame);
+        if (currentScore >= 4) {
+            document.getElementById('game-over-message').innerText = 'Great job! You scored ' + currentScore;
+        }
+        else {
+            document.getElementById('game-over-message').innerText = 'Better luck next time! You scored ' + currentScore;
+        }
+        document.getElementById("dialog").showModal();
     }
 }
 
@@ -231,12 +240,12 @@ function startGame() {
 
 document.addEventListener("DOMContentLoaded", () => {
     startGame();
-})
+});
 
 
 document.querySelectorAll('.answer').forEach((button) => {
     button.addEventListener('click', (event) => {
         checkAnswer(event);
 
-    })
-})
+    });
+});
