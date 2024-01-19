@@ -144,7 +144,7 @@ The Liverbird displayed on the site is taken from Pinterest.
 ## Acknowledgments
 My Mentor Antonio for all his help and advice during the project.
 
-
+Inpiration for this readMe came from AliOKeeffe.
 
 
 
