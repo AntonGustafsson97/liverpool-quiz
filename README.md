@@ -80,7 +80,7 @@ Wireframes were created using Balsamiq.
    - [CSS Result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fantongustafsson97.github.io%2Fliverpool-quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
 
 - #### JavaScript
-   -No errors were shown when passing the javaScript file through  
+   - No errors were shown when passing the javaScript file through  
    - ![JSHint Result](docs/readme_images/jshint.png)  
 
 ###
@@ -105,9 +105,9 @@ Wireframes were created using Balsamiq.
 ## Technologies Used
 
 ### Languages
--JavaScript
--CSS3
--HTML5
+- JavaScript
+- CSS3
+- HTML5
 
 ### Frameworks - Libraries - Programs used
 - [W3C](https://www.w3.org/) - Used to validate HTML and CSS.
